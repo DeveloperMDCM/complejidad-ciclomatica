@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table{
+    width: 20%;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid black;
+    padding: 1px;
+    
+}
+table h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+tr:nth-child(1){
+    background-color: #c6eafa;
+}
+tr:nth-child(3){
+    background-color: #c6eafa;
+}
+
+
+tr{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.categoria
+{
+    display: flex; 
+    justify-content: center;
+    margin: 10px;
+    padding: 0 40px;
+}
+
+.categoria  h4{
+    font-size: 20px;
+    margin: 10px;
+}
+
+input
+{
+    margin: 10px;
+}
+#Calcular
+{
+    color: red;
+    font-size: 40px;
+    width: 300px;
+    height: 50px;
+}

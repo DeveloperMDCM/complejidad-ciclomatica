@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio en clase</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <center>
+        <form id="frm1" action="index.html">
+            <br>
+            <h1>Laboratorio 1</h1><br>
+            <!-- tabla con borde con 3 columnas  3 filas -->
+            <table border="1">
+                <tr>
+                    <td>
+                        <h2>Categoria</h2>
+                    </td>
+                    <td>
+                        <h2>Tarifa</h2>
+                    </td>
+                    <td>
+                        <h2>Extra>48</h2>
+                    </td>
+                    <td>
+                        <h2>Extra_24_y_48</h2>
+                    </td>
+                    <td>
+                        <h2>Extra_<24 </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>1</h1>
+                    </td>
+                    <td>
+                        <h1>12.000</h1>
+                    </td>
+                    <td>
+                        <h1>2.400</h1>
+                    </td>
+                    <td>
+                        <h1>10%</h1>
+                    </td>
+                    <td>
+                        <h1>5%</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>2</h1>
+                    </td>
+                    <td>
+                        <h1>17.000</h1>
+                    </td>
+                    <td>
+                        <h1>3.400</h1>
+                    </td>
+                    <td>
+                        <h1>10%</h1>
+                    </td>
+                    <td>
+                        <h1>5%</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>3</h1>
+                    </td>
+                    <td>
+                        <h1>22.000</h1>
+                    </td>
+                    <td>
+                        <h1>4.400</h1>
+                    </td>
+                    <td>
+                        <h1>10%</h1>
+                    </td>
+                    <td>
+                        <h1>5%</h1>
+                    </td>
+                </tr>
+            </table>
+            <div class="categoria">
+                <div>
+                    <h4>Categoria 1</h4>
+                    <input type="radio" checked name="tarifa" id="categoria1">
+
+                </div>
+                <div>
+                    <h4>Categoria 2</h4>
+                    <input type="radio" name="tarifa" id="categoria2">
+
+                </div>
+                <div>
+                    <h4>Categoria 3</h4>
+                    <input type="radio" name="tarifa" id="categoria3">
+
+                </div>
+
+            </div>
+            <img src="tabla.png" alt=""><br>
+            <input type="number" pattern="^[0-9]+" placeholder="horas trabajas" name="" id="horasTrabajadas" value="49"
+                required>
+            <br>
+            <input hidden type="number" placeholder="Tarifa" name="" id="TarifaDePago" required>
+            <p id="extra"></p>
+            <h1 id="pago">Pago: 0</h1>
+            <br>
+
+            <input type="button" id="Calcular" onclick="CalcularPago()" value="Calcular"></input>
+            <input type="button" id="Calcular" onclick="CalcularPago2()" value="Por consola"></input>
+        </form>
+        <center>
+            <script src="index.js"></script>
+            <script src="PorConsola.js"></script>
+</body>
+
+</html>
